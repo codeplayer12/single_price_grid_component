@@ -1,0 +1,118 @@
+$primary-color-cyan: hsl(179,62%,43%);
+$primary-color-yellow: hsl(71,73%,54%);
+$neutral-color-light-gray: hsl(204,43%,93%);
+$neutral-color-grayish-blue: hsl(218,22%,67%);
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$karla-font : 'Karla';
+
+body{
+    font-size: 16px;
+    background:$neutral-color-light-gray;
+    color:#fff;
+    font-family: 'Karla','sans-serif';
+}
+.card{
+    margin: auto;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 2px #0002);
+    .top-section{
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        margin:0 10%;
+        padding:2.5% 0;
+        h1{
+            color:$primary-color-cyan;
+        }
+        h2{
+            color: $primary-color-yellow;
+        }
+        p{
+            color: $neutral-color-grayish-blue;
+        }
+    }
+    .bottom-section{
+        display:flex;
+        .subscription-section{
+            padding-bottom: 5%;
+            border-bottom-left-radius: 10px;
+            background-color:$primary-color-cyan;
+            width: 50%;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+            padding-left: 10%;
+            
+            box-sizing: border-box;
+            h2{
+                padding-top: 5%;
+                margin-bottom: 0;
+            }
+            span{
+                font-size: 30px;
+                font-weight: bold;
+                // line-height: 0;
+            }
+            input{
+                border:none;
+                background-color: $primary-color-yellow;
+                width: 75%;
+                padding: 15px 30px;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                filter: drop-shadow(0px 2px 2px #0002);
+            }
+            input:hover{
+                color: $primary-color-yellow;
+                background-color:#fff;
+                cursor: pointer;
+            }
+        }
+        .subscription-details{
+            box-sizing: border-box;
+            border-bottom-right-radius: 10px;
+            background-color:$primary-color-cyan;
+            opacity: 0.75;
+            width: 50%;
+            padding-left: 10%;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+            ul{
+                list-style: none;
+                line-height: 1.5em;
+                margin-top: 0;
+                padding-left: 0;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+footer{
+    p{
+        color:#000;
+    }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+    .card{
+        min-width:50%;
+        .bottom-section{
+            flex-direction: column;
+            .subscription-section{
+                width:100%;
+                border-radius: 0;
+            }
+            .subscription-details{
+                width:100%;
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  font-size: 16px;
+  background: #e5eff5;
+  color: #fff;
+  font-family: "Karla", "sans-serif";
+}
+
+.card {
+  margin: auto;
+  width: 70%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 2px #0002);
+}
+.card .top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 10%;
+  padding: 2.5% 0;
+}
+.card .top-section h1 {
+  color: #2ab2af;
+}
+.card .top-section h2 {
+  color: #c0df34;
+}
+.card .top-section p {
+  color: #98a6bd;
+}
+.card .bottom-section {
+  display: flex;
+}
+.card .bottom-section .subscription-section {
+  padding-bottom: 5%;
+  border-bottom-left-radius: 10px;
+  background-color: #2ab2af;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+.card .bottom-section .subscription-section h2 {
+  padding-top: 5%;
+  margin-bottom: 0;
+}
+.card .bottom-section .subscription-section span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.card .bottom-section .subscription-section input {
+  border: none;
+  background-color: #c0df34;
+  width: 75%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  filter: drop-shadow(0px 2px 2px #0002);
+}
+.card .bottom-section .subscription-section input:hover {
+  color: #c0df34;
+  background-color: #fff;
+  cursor: pointer;
+}
+.card .bottom-section .subscription-details {
+  box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  background-color: #2ab2af;
+  opacity: 0.75;
+  width: 50%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card .bottom-section .subscription-details ul {
+  list-style: none;
+  line-height: 1.5em;
+  margin-top: 0;
+  padding-left: 0;
+  align-self: flex-start;
+}
+
+footer p {
+  color: #000;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .card {
+    min-width: 50%;
+  }
+  .card .bottom-section {
+    flex-direction: column;
+  }
+  .card .bottom-section .subscription-section {
+    width: 100%;
+    border-radius: 0;
+  }
+  .card .bottom-section .subscription-details {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
