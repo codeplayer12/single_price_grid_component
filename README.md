@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://codeplayer12.github.io/single_price_grid_component/)
 
 ## My process
 
@@ -76,8 +75,8 @@ Areas for development are sass markup to make the project cleaner and leaner.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [personal site](#)
+- Frontend Mentor - [@codeplayer12](https://www.frontendmentor.io/profile/codeplayer12)
 - Twitter - [@noblethunder](https://www.twitter.com/noblethunder)
 
 
